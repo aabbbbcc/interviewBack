@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-Page Interview Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <main class="quiz-container">
+        <header>
+            <button id="reset-btn" class="nav-btn">Reset Quiz</button>
+            <h1>Backend Interview Skills Quiz</h1>
+            
+            <p>Answer the question below and click "Check Answer" to see the result.</p>
+            <div id="score-tracker">
+                Score: <span id="current-score">0</span> / <span id="total-questions">100</span>
+            </div>
+            
+        </header>
+        
+        <div id="quiz-body">
+            <!-- The current question will be dynamically displayed here by JavaScript -->
+        </div>
+
+        <div class="quiz-navigation">
+            <button id="prev-btn" class="nav-btn">⬅️ Previous</button>
+            <span id="question-counter">Question 1 / 100</span>
+            <button id="next-btn" class="nav-btn">Next ➡️</button>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
